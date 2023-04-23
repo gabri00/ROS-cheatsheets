@@ -76,6 +76,32 @@ ros2 topic hz <topic_name>
 
 ## Services
 
+List active services:
+```sh
+ros2 service list
+ros2 service list -t # Displays also the type
+```
+
+Show type of a service:
+```sh
+ros2 service type <srv_name>
+```
+
+Find all services of a specific type:
+```sh
+ros2 service find <srv_type>
+```
+
+Shows the data structure of of the service type:
+```sh
+ros2 interface show <srv_type>
+```
+
+Call a service from the command line:
+```sh
+ros2 service call <srv_name> <srv_type> <args> # args in YAML
+```
+
 ## Actions
 
 ## Launch files
